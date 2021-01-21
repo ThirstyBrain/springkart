@@ -1,0 +1,126 @@
+<!-- <div class="kpx_login">
+    <div class="row kpx_row-sm-offset-3 kpx_socialButtons">
+        <div class="col-xs-2 col-sm-2">
+          <a href="#" class="btn btn-lg btn-block kpx_btn-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+            <i class="fa fa-facebook fa-2x"></i>
+            <span class="hidden-xs"></span>
+          </a>
+        </div>
+        <div class="col-xs-2 col-sm-2">
+          <a href="#" class="btn btn-lg btn-block kpx_btn-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+            <i class="fa fa-twitter fa-2x"></i>
+            <span class="hidden-xs"></span>
+          </a>
+        </div>  
+        <div class="col-xs-2 col-sm-2">
+          <a href="#" class="btn btn-lg btn-block kpx_btn-google-plus" data-toggle="tooltip" data-placement="top" title="Google Plus">
+            <i class="fa fa-google-plus fa-2x"></i>
+            <span class="hidden-xs"></span>
+          </a>
+        </div>  
+    </div><br>
+    
+    <div class="row kpx_row-sm-offset-3 kpx_socialButtons">
+        <div class="col-xs-1 col-sm-1"></div>
+        <div class="col-xs-2 col-sm-2">
+          <a href="#" class="btn btn-lg btn-block kpx_btn-github" data-toggle="tooltip" data-placement="top" title="GitHub">
+            <i class="fa fa-github fa-2x"></i>
+            <span class="hidden-xs"></span>
+          </a>
+        </div>
+    
+        <div class="col-xs-2 col-sm-2">
+            <a href="#" class="btn btn-lg btn-block kpx_btn-linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+              <i class="fa fa-linkedin fa-2x"></i>
+              <span class="hidden-xs"></span>
+            </a>
+          </div>
+          <div class="col-xs-1 col-sm-1"></div>
+    </div><br>
+    <div class="row kpx_row-sm-offset-3 kpx_socialButtons">
+  
+    
+    
+    </div><br>
+    <div class="row kpx_row-sm-offset-3 kpx_socialButtons">
+     
+   
+     
+    </div><br>
+    <div class="row kpx_row-sm-offset-3 kpx_socialButtons">
+   
+
+    </div>
+    
+</div> -->
+
+<!-- 
+<div class="d-flex justify-content-center mt-5">
+    <div class="col-3">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="text-center mb-4">
+               <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+             </div>
+          
+             <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+             <app-text-input formControlName="password" [label]="'Password'" [type]="'password'"></app-text-input>
+              
+            <button [disabled]="loginForm.invalid" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+       </form>
+    </div>
+</div> -->
+
+
+<!-- <div class="signin-form login-background-color">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+		<h2>Sign in</h2>
+        <p class="hint-text">Sign in with your social media account</p>
+		<div class="social-btn text-center">
+			<a href="#" class="btn btn-primary btn-lg" title="Facebook"><i class="fa fa-facebook"></i></a>
+			<a href="#" class="btn btn-info btn-lg" title="Twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn btn-danger btn-lg" title="Google"><i class="fa fa-google"></i></a>
+        </div>
+        <div class="social-btn text-center">
+            <a href="#" class="btn btn-primary btn-lg" title="Google"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="btn btn-dark btn-lg" title="Google"><i class="fa fa-github"></i></a>
+		</div>
+        <div class="or-seperator"><b>or</b></div>
+        <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+        <app-text-input formControlName="password" [label]="'Password'" [type]="'password'"></app-text-input>
+         
+       <button [disabled]="loginForm.invalid" class="btn btn-success btn-lg btn-block signup-btn" type="submit">Sign in</button>
+    </form>
+    <div class="text-center small">Don't have an account? <a href="#">Sign up</a></div>
+</div> -->
+<div>
+  <div class="d-flex justify-content-center mt-5 login-background-color"
+    style="padding-top: 40px; padding-bottom: 80px;">
+    <div class="col-3" style="background-color: white;">
+
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <h2 style="text-align: center;">Sign in</h2>
+        <p class="hint-text" style="text-align: center;">Sign in with your social media account</p>
+        <div class="social-btn text-center">
+          <a href="#" class="btn btn-primary btn-lg" title="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="btn btn-info btn-lg" title="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="btn btn-danger btn-lg" title="Google"><i class="fa fa-google"></i></a>
+        </div>
+        <div class="social-btn text-center">
+          <a href="#" class="btn btn-primary btn-lg" title="Google"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="btn btn-dark btn-lg" title="Google"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="or-seperator"><b>or</b></div>
+        <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+        <app-text-input formControlName="password" [label]="'Password'" [type]="'password'"></app-text-input>
+
+        <button [disabled]="loginForm.invalid" class="btn btn-success btn-lg btn-block signup-btn" type="submit">Sign
+          in</button>
+      </form>
+      <div class="text-center small">Don't have an account? <a href="#">Sign up</a></div>
+
+
+
+
+    </div>
+  </div>
+</div>

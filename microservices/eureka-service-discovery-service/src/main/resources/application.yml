@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: eureka-service
+
+server:
+  port: 8302
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
+
+#zuul:
+  #Service will be mapped under the /api URI
+ # prefix: /rest
+  #routes:
+   # identity-service:
+    #  path: /identity-service/**
+     # url: http://localhost:8088

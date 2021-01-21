@@ -1,0 +1,349 @@
+body {
+    padding: 2rem 0rem;
+  }
+  
+  .like {
+    font-size: 1.5rem;
+  }
+//   h3.product-brand {
+//     margin-top: inherit;
+//     -webkit-margin-before: initial;
+//     margin-block-start: 0;
+// }
+
+.product-brand {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.product-product {
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+}
+
+.product-card{
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
+
+body{
+  background-color: #DFE7EF;
+}
+
+.container{
+  margin-top: 50px;
+}
+
+h1, .card-title, a, #toast{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  color: #5C7CFA;
+}
+
+.card{
+  box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
+  border-radius: 15px;
+  transition: transform .2s;
+}
+
+.card-body{
+  padding: 10px;
+  margin-top: -50px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease-in-out;
+}
+
+.heart{
+  color: #989898;
+  margin-top: 15px;
+  margin-left: 230px;
+  font-size: 30px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  padding: 0px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.heart-active{
+  color: #C50707;
+}
+
+.heart:hover{
+  color: red;
+  background-color: #f9f9f9;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease-in-out;
+}
+
+.card-body a{
+  visibility: hidden;
+}
+
+.card:hover > .card-body{
+  margin-top: -0px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.card:hover{
+  transform: scale(1.02);
+}
+
+.card:hover > .card-body > a{
+  visibility: visible;
+}
+
+.first-image{
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.cart, .wish{
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  margin-left: -24px;
+  margin-top: 0px;
+  margin-right: 3px;
+  background-color: #fff;
+  color: #5C7CFA;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  text-align: center;
+  -ms-display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wish{
+  color: #C50707;
+}
+
+#toast, #toast-cart{
+  padding: 10px;
+  padding-left: 5px;
+  position: fixed;
+  width: 230px;
+  height: 50px;
+  top: 0;
+  left: 80%;
+  transform:translate(-50%);
+  background-color: #EFF2FF;
+  color: #76777E;
+  padding: 1px;
+  border-radius: 8px;
+  text-align:center;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  visibility: hidden;
+  opacity: 0;
+  -ms-display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+#toast.show, #toast-cart.show{
+  visibility:visible;
+  animation:fadeInOut 3s;
+}
+
+@keyframes fadeInOut{
+  5%,95%{opacity:1;top:50px}
+  15%,85%{opacity:1;top:30px}
+}
+
+a{
+  z-index: -1;
+}
+
+
+
+#sidebar{
+	float:left;
+	background:#fff;
+	width:275px;	
+	padding:13px 0 0 45px;
+	height:1400px;
+	border-right:1px solid #eee;
+}
+#sidebar h3{
+	color:#262626;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:600;
+	// padding:35px 0 10px 0;
+	letter-spacing:1px;
+	clear:both;
+}
+
+
+
+
+
+
+
+#sidebar .checklist{
+	padding:0;
+}
+
+.checklist ul li{	
+	font-size:14px;
+	font-weight:400;
+	list-style:none;
+	padding: 7px 0 7px 23px;
+}
+.checklist li span{
+	float:left;
+	width:11px;
+	height:11px;
+	margin-left:-23px;
+	margin-top:4px;
+	border: 1px solid #d1d3d7;
+	position:relative;	
+}
+.sizes li span, .categories .sizes li{
+	-webkit-transition: all 300ms ease-out;
+	   -moz-transition: all 300ms ease-out;
+	    -ms-transition: all 300ms ease-out;
+	     -o-transition: all 300ms ease-out;
+	        transition: all 300ms ease-out;
+}
+.checklist li a{
+	color:#676a74;
+	text-decoration:none;	
+	-webkit-transition: all 300ms ease-out;
+	   -moz-transition: all 300ms ease-out;
+	    -ms-transition: all 300ms ease-out;
+	     -o-transition: all 300ms ease-out;
+	        transition: all 300ms ease-out;
+}
+.checklist li a:hover{	
+	color:#222;
+	-webkit-transition: all 300ms ease-out;
+	   -moz-transition: all 300ms ease-out;
+	    -ms-transition: all 300ms ease-out;
+	     -o-transition: all 300ms ease-out;
+	        transition: all 300ms ease-out;
+}
+.checklist a:hover span{ 	
+	border-color:#a6aab3;	
+}
+.sizes a:hover span, .categories a:hover span{	
+	border-color:#a6aab3;
+	-webkit-transition: all 300ms ease-out;
+	   -moz-transition: all 300ms ease-out;
+	    -ms-transition: all 300ms ease-out;
+	     -o-transition: all 300ms ease-out;
+	        transition: all 300ms ease-out;
+}
+.checklist a span span{border:none;margin:0;float:none; position:absolute;top:0;left:0;}
+.checklist a .x{
+	display:block;
+	width:0;	 
+	height:2px;
+	background:#5ff7d2;
+	top:6px;
+	left:2px;	
+	-ms-transform: rotate(45deg); 
+   	-webkit-transform: rotate(45deg); 
+    transform: rotate(45deg);	
+	-webkit-transition: all 50ms ease-out;
+}
+.checklist a .x.animate{
+	width:4px;
+	-webkit-transition: all 100ms ease-in;
+	   -moz-transition: all 100ms ease-in;
+	    -ms-transition: all 100ms ease-in;
+	     -o-transition: all 100ms ease-in;
+	        transition: all 100ms ease-in;
+}
+.checklist a .y{
+	display:block;
+	width:0px; 
+	height:2px;
+	background:#5ff7d2;
+	top:4px;
+	left:3px;	
+	-ms-transform: rotate(13deg); 
+   	-webkit-transform: rotate(135deg); 
+    transform: rotate(135deg);	
+	-webkit-transition: all 50ms ease-out;
+}
+.checklist a .y.animate{
+	width:8px;
+	-webkit-transition: all 100ms ease-out;
+	   -moz-transition: all 100ms ease-out;
+	    -ms-transition: all 100ms ease-out;
+	     -o-transition: all 100ms ease-out;
+	        transition: all 100ms ease-out;
+}
+.checklist .checked span{
+	border-color:#8d939f;
+}
+.colors ul, .sizes ul{
+	float:left; width:130px;	
+}
+.colors ul li{padding-left:21px;}
+.colors a span{
+	border:none;
+	position:relative;
+	border-radius:100%;
+	background-color:#eae3d3;
+	width:13px;
+	height:13px;
+	margin-left:-20px;
+}
+.colors button:hover span{
+	width:15px;
+	height:15px;
+	margin-top:3px;
+	margin-left:-21px;
+}
+#sidebar img{margin-top:6px;}
+
+.product{
+    position: relative;
+    perspective: 800px;
+    width:306px;
+    height:471px;
+    transform-style: preserve-3d;
+    transition: transform 5s;
+	float:left; 
+	margin-right: 23px;
+	-webkit-transition: width 500ms ease-in-out;
+	   -moz-transition: width 500ms ease-in-out;
+		-ms-transition: width 500ms ease-in-out;
+		 -o-transition: width 500ms ease-in-out;
+ 		    transition: width 500ms ease-in-out;
+}

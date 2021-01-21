@@ -1,0 +1,46 @@
+.cart-no {
+    position: absolute;
+    min-height: 25px;
+    min-width: 25px;
+    border-radius: 50%;
+    font-size: 1em;
+    background: purple;
+    color: white;
+    text-align: center;
+    top: -12px;
+    right: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #343a40;
+
+    &.active {
+        color:blue;   
+    }
+}
+
+.logo {
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+
+// search start
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+// search End

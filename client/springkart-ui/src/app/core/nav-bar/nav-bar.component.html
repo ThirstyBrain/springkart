@@ -1,0 +1,94 @@
+<div
+  class="d-flex flex-column flex-md-row align-items-center justify-content-between p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
+  <div class="d-flex align-center">
+    <img src="/assets/images/logo-2.png" style="max-height: 70px;" alt="myview" routerLink="/" class="logo" />
+  </div>
+
+  <nav class="my-2 my-md-0 mr-md-3 text-uppercase" style="font-size: larger;width: 100%;">
+    <div class="row">
+      <div class="col-sm-1"> </div>
+      <div class="col-md-4" style="padding-top:10px;">
+        <a class="p-2" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a class="p-2" routerLink="/men" routerLinkActive="active">Men</a>
+        <a class="p-2" routerLink="/women" routerLinkActive="active">women</a>
+        <a class="p-2" routerLink="/kids" routerLinkActive="active">Kid</a>
+      </div>
+      <div class="col-md-6" style="padding-top:10px;">
+        <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+      </div>
+      <div class="col-sm-1"> </div>
+    </div>
+
+
+
+  </nav>
+  <div class="d-flex align-center">
+    <a routerLink="/basket" class="position-relative">
+      <i class="fa fa-heart fa-2x mr-5 text-dark"></i>
+      <div class="cart-no">0</div>
+    </a>
+    <a routerLink="/basket" class="position-relative">
+      <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>
+      <div class="cart-no">0</div>
+    </a>
+
+
+    <ng-container>
+      <!-- <a routerLink="/account/login" class="position-relative" >
+        <i class="fa fa-sign-in fa-2x mr-5 text-dark"></i>
+       
+      </a>
+      <a routerLink="/account/register" class="position-relative" >
+        <i class="fa fa-user-plus fa-2x mr-5 text-dark"></i>
+      
+      </a> -->
+      <!-- <a routerLink="/account/login" class="btn btn-outline-secondary mr-2"><i class="fa fa-login fa-2x mr-5 text-dark"></i>Login</a> -->
+      <!-- <a routerLink="/account/register" class="btn btn-outline-secondary mr-3" href="#">Sign up</a> -->
+    </ng-container>
+
+    <ng-container>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+           <strong>{{user}}</strong>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a routerLink="/account/login" class="dropdown-item d-flex align-items-center py-2">
+                <i class="fa fa-sign-in mr-3"></i> Sign in
+              </a>
+            </li>
+            <li> 
+              <a routerLink="/account/register" class="dropdown-item d-flex align-items-center py-2">
+                <i class="fa fa-user-plus mr-3"></i> Register
+              </a>
+            </li>
+            <li *ngIf="isAuthenticated">
+              <a routerLink="/basket" class="dropdown-item d-flex align-items-center py-2" >
+                <i class="fa fa-shopping-cart mr-3"></i> View Basket
+              </a>
+            </li>
+            <li class="divider" *ngIf="isAuthenticated"></li>
+            <li *ngIf="isAuthenticated"> 
+              <a routerLink="/orders" class="dropdown-item d-flex align-items-center py-2">
+                <i class="fa fa-history mr-3"></i> View Orders
+              </a>
+            </li>
+            <li class="divider" *ngIf="isAuthenticated"></li>
+
+            <li *ngIf="isAuthenticated">
+              <a (click)="logout()" class="dropdown-item d-flex align-items-center py-2">
+                <i class="fa fa-sign-out mr-3"></i> Sign Out
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    </ng-container>
+
+  </div>
+</div>
