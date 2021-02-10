@@ -67,4 +67,16 @@ public class ProductRequest {
         this.quantity = quantity;
         this.productimage = productimage;
     }
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Product{");
+        sb.append("productid='").append(productid).append('\'');
+        sb.append("description='").append(description).append('\'');
+        sb.append("productname='").append(productname).append('\'');
+        sb.append("price='").append(price).append('\'');
+        sb.append("quantity='").append(quantity).append('\'');
+        sb.append("productimage='").append(quantity).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }

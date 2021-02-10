@@ -21,7 +21,7 @@ public class ProductAdapter implements ProductPort {
     }
 
     @Override
-    public void addProduct(ProductDomain productDomain) {
+    public int addProduct(ProductDomain productDomain) {
         Product productEntityObj = new Product();
         productEntityObj.setProductid(productDomain.getProductid());
         productEntityObj.setDescription(productDomain.getDescription());
@@ -29,7 +29,10 @@ public class ProductAdapter implements ProductPort {
         productEntityObj.setProductimage(productDomain.getProductimage());
         productEntityObj.setPrice(productDomain.getPrice());
         productEntityObj.setQuantity(productDomain.getQuantity());
-        this.productRepository.save(productEntityObj);
+        Product productObj = productRepository.save(productEntityObj);
+        if(productObj!=null)
+            return 1;
+        return 0;
     }
 
     @Override

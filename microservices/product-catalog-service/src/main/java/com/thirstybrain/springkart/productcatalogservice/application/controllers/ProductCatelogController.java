@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,7 +64,7 @@ public class ProductCatelogController {
     }
 
     @PostMapping("")
-    public ResponseEntity addProduct(@RequestBody ProductRequest productRequest){
+    public ResponseEntity addProduct(@RequestBody ProductRequest productRequest) throws IOException {
         ProductDomain productDomain = new ProductDomain();
 
         productDomain.setProductid(productRequest.getProductid());
@@ -73,6 +74,7 @@ public class ProductCatelogController {
         productDomain.setQuantity(productRequest.getQuantity());
         productDomain.setPrice(productRequest.getPrice());
 
+        //this.productService.save(productDomain);
         this.productService.addProduct(productDomain);
         return new ResponseEntity<ProductResponse> (HttpStatus.OK);
     }
@@ -104,6 +106,14 @@ public class ProductCatelogController {
         productDomain.setPrice(productRequest.getPrice());
 
         this.productService.removeProduct(productDomain);
+        return new ResponseEntity<ProductResponse> (HttpStatus.OK);
+    }
+
+
+
+    @PostMapping("deleteElastic")
+    public ResponseEntity deleteAll(@RequestBody String id) throws IOException {
+        productService.delete(id);
         return new ResponseEntity<ProductResponse> (HttpStatus.OK);
     }
 }
