@@ -74,7 +74,7 @@ public class ProductCatelogController {
         productDomain.setQuantity(productRequest.getQuantity());
         productDomain.setPrice(productRequest.getPrice());
 
-        //this.productService.save(productDomain);
+
         this.productService.addProduct(productDomain);
         return new ResponseEntity<ProductResponse> (HttpStatus.OK);
     }

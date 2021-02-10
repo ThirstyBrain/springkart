@@ -1,4 +1,4 @@
-package com.thirstybrain.springkart.productcatalogservice.application.configs;
+package com.thirstybrain.springkart.productcatalogservice.infrastructure.configs;
 
 import com.thirstybrain.springkart.productcatalogservice.domain.entities.ProductDomain;
 import org.apache.kafka.clients.consumer.ConsumerConfig;

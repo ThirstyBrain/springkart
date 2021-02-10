@@ -1,5 +1,4 @@
-package com.thirstybrain.springkart.productcatalogservice.application.configs;
-
+package com.thirstybrain.springkart.productcatalogservice.infrastructure.configs;
 
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;
@@ -8,14 +7,12 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.config.AbstractFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ElasticConfiguration{
-
-    private static final Logger logger = LoggerFactory.getLogger(ElasticConfiguration.class);
+public class ElasticSearchConfig {
+    private static final Logger logger = LoggerFactory.getLogger(ElasticSearchConfig.class);
 
     @Value("${spring.elasticsearch.host}")
     public String host;
