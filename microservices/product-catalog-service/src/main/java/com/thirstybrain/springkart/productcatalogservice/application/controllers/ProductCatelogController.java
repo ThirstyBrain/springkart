@@ -29,7 +29,7 @@ public class ProductCatelogController {
     }
 
     @GetMapping(value = "")
-    public ResponseEntity<List<ProductResponse>> getAll() {
+    public ResponseEntity<List<ProductResponse>> getAll() throws IOException {
         List<ProductResponse> listProductResponse = new ArrayList<>();
 
         List<ProductDomain> list = productService.getProducts();

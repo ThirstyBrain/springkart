@@ -11,7 +11,7 @@ public interface ProductService {
     int updateProduct(ProductDomain productDomain);
     void removeProduct(ProductDomain product);
 
-    List<ProductDomain> getProducts();
+    List<ProductDomain> getProducts() throws IOException;
 
     ProductDomain getProductById(Integer productId);
 

@@ -71,8 +71,9 @@ public class ProductServiceAdapter implements ProductService {
     }
 
     @Override
-    public List<ProductDomain> getProducts() {
-        return this.productPort.getProducts();
+    public List<ProductDomain> getProducts() throws IOException {
+       // return this.productPort.getProducts();
+        return this.readAll();
     }
 
     @Override
